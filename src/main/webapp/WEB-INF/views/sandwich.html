@@ -1,10 +1,15 @@
+<html xmlns:th="http://www.thymeleaf.org">
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<h1>
+    <tr th:each="condiment,condimentstrar:${condiment}">
+      <h1> Sandwich  <a th:text="${condiment}"></a> </h1>
+    </tr>
+</h1>
 </body>
 </html>
